@@ -1,0 +1,23 @@
+# RAG System Configuration
+
+# LLM Configuration
+llm:
+  model: "gpt-3.5-turbo"
+  temperature: 0.7
+  max_tokens: 500
+
+# Retriever Configuration
+retriever:
+  top_k: 5
+  chunk_size: 1000
+  chunk_overlap: 200
+
+# Vector Store Configuration
+vectorstore:
+  type: "chroma"
+  persist_directory: "./data/vectorstore"
+
+# Data Paths
+data:
+  documents_path: "./data/documents"
+
